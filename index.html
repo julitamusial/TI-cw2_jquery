@@ -51,43 +51,39 @@
          <div class = "hero-content">
             <h1>Example header</h1>
             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,adipisci velit..</p>
+        
+        <!--Submit button-->     
+        <p class = "submit-button">Submit</p>
+        
         </div>
         
-	<!--Form button-->     
-        <div class = "form-button"><p>Submit</p></div>
+        <div class = "form-content">
+        <!--Form-->
+			<form id="form">
+				<h3>Formularz zgłoszeniowy</h3>
+				<p id="returnmessage"></p>
+				
+				<label>Imię: <span>*</span></label>
+				<input type="text" id="fname" placeholder="Podaj swoje imię"/>
+	
+				<label>Nazwisko: <span>*</span></label>
+				<input type="text" id="lname" placeholder="Podaj swoje nazwisko"/>
+	
+				<label>E-mail: <span>*</span></label>
+				<input type="email" id="email" placeholder="E-mail też się przyda"/>
+	
+				<label>Wiadomość:</label>
+				<textarea type="text"  id="message" placeholder="Co Ci chodzi po głowie?"></textarea>
+	
+				<input type="button" id="submit" value="Wyślij zgłoszenie!"/>
+		</form>
+
+        </div>
+        
+
      </div>
 
-	<!--Form-->
-		
- <div class = "form">
- 	<form>
- 		<div class = "f-row" id='r-fname'>
- 			<div class='label'>Imie:</div>
- 			<div class='pole'><input id='fname' type="text" placeholder="Imię"></div>
- 		</div>
- 
- 		<div class = "f-row" id='r-lname'>
- 			<div class='label'>Nazwisko:</div>
- 			<div class='pole'><input id='lname' type="text" placeholder="Nazwisko"></div>
- 		</div>		
- 		
-  		<div class = "f-row" id='r-email'>
- 			<div class='label'>E-mail:</div>
- 			<div class='pole'><input id='email' type="text" placeholder="E-mail"></div>
- 		</div>	
- 		
- 		 <div class = "f-row" id='r-mess'>
- 			<div class='label'>Wiadomość:</div>
- 			<div class='pole' id='message'><textarea class="form-control status-box" rows="2" placeholder="What's on your mind?"></textarea></div>
- 		</div>			
- 		
- 		 <div class = "f-row">
- 			<div class = "f-button"><input type="button" value="Wyślij" onclick="alert('Hahahah')"/></div>
- 		</div>	
- 	</form>
- </div>
-
-<div id='infot'></div>
+	
 
 
 
