@@ -11,9 +11,6 @@
     <script src="script.js"></script>
 	<link type="text/css"; rel="stylesheet"; href="stylesheet.css">
     
-	<style>
-</style>
-
 </head>
     <body>
 <!-- Menu bar-->        
@@ -38,9 +35,9 @@
 				
 	<!--Social buttons-->
 		<div class = "social-buttons">
-		        <div><a href = "http://www.google.pl/"><img src = "img/32-googleplus.png"/></a></div>
-                <div><a href = "http://www.twitter.pl/"><img src = "img/32-twitter.png"/></a></div>
-                <div><a href = "http://www.facebook.pl/"><img src = "img/32-facebook.png"/></a></div>
+		        <div><a href = "http://www.google.pl/"><img class = "social" src = "img/32-googleplus.png"/></a></div>
+                <div><a href = "http://www.twitter.pl/"><img class = "social" src = "img/32-twitter.png"/></a></div>
+                <div><a href = "http://www.facebook.pl/"><img class = "social" src = "img/32-facebook.png"/></a></div>
         </div>
 		</div>
 	</div>
@@ -53,8 +50,8 @@
             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,adipisci velit..</p>
         
         <!--Submit button-->     
-        <p class = "submit-button">Submit</p>
-        
+        <div class = "submit-button"><p>Submit now!</p></div>
+     
         </div>
         
         <div class = "form-content">
@@ -64,34 +61,25 @@
 				<p id="returnmessage"></p>
 				
 				<label>Imię: <span>*</span></label>
-				<input type="text" id="fname" placeholder="Podaj swoje imię"/>
+				<input type="text" id="fname" placeholder = "Podaj swoje imię"/>
 	
 				<label>Nazwisko: <span>*</span></label>
-				<input type="text" id="lname" placeholder="Podaj swoje nazwisko"/>
+				<input type="text" id="lname" placeholder = "Podaj swoje nazwisko"/>
 	
 				<label>E-mail: <span>*</span></label>
-				<input type="email" id="email" placeholder="E-mail też się przyda"/>
+				<input type="email" id="email" placeholder = "E-mail też się przyda"/>
 	
 				<label>Wiadomość:</label>
-				<textarea type="text"  id="message" placeholder="Co Ci chodzi po głowie?"></textarea>
+				<textarea type="text"  id="message" placeholder = "Co Ci chodzi po głowie?"></textarea>
 	
-				<input type="button" id="submit" value="Wyślij zgłoszenie!"/>
+				<input type="button" id="submit" value = "Wyślij zgłoszenie!"/>
 		</form>
 
         </div>
         
 
      </div>
-
 	
-
-
-
-
-
-
-
-		
 		
 <!--Page content-->
     <div class ="page">
@@ -112,7 +100,7 @@
 				</div>
 				
                 <div class = "image">
-					<div><img src = "img/forth-bridge.jpg" style= "width:400px; height:250px"/></div>
+					<div><img src ="img/forth-bridge.jpg" style= "width:400px; height:250px"/></div>
 				</div>
 			</div>
 
@@ -149,28 +137,27 @@
 		<h2>Lorem ipsum dolor sit amet</h2>
 	</div>
 	
-<!--Gallery-->
+	
+<!--Gallery carousel-->
+
 	<div class = "page">
 		<div class = "g-container">
-			<div class = "row">	
-				<div><img src = "img/bridge3.jpg" style= "width:200px; height:125px"/></div>
-				<div><img src = "img/bridge3.jpg" style= "width:200px; height:125px"/></div>
-				<div><img src = "img/bridge3.jpg" style= "width:200px; height:125px"/></div>
-			</div>
-			
-			<div class = "row">	
-				<div><img src = "img/bridge2.jpg" style= "width:200px; height:125px"/></div>
-				<div><img src = "img/bridge2.jpg" style= "width:200px; height:125px"/></div>
-				<div><img src = "img/bridge2.jpg" style= "width:200px; height:125px"/></div>
-			</div>
-			
-			<div class = "row">	
-				<div><img src = "img/forth-bridge.jpg" style= "width:200px; height:125px"/></div>
-				<div><img src = "img/forth-bridge.jpg" style= "width:200px; height:125px"/></div>
-				<div><img src = "img/forth-bridge.jpg" style= "width:200px; height:125px"/></div>
+			<div id="slider">
+  				<p class="control_next">>></p>
+  				<p class="control_prev"><</p>
+  				<ul>
+    				<li><img src = "img/bridge2.jpg"/></li>
+    				<li><img src = "img/forth-bridge.jpg"/></li>
+    				<li><img src = "img/bridge2.jpg"/></li>
+    				<li><img src = "img/forth-bridge.jpg"/></li>
+    				
+  				</ul>  
 			</div>
 		</div>
 	</div>
+	
+
+	
 	
 <!--Footer-->
     <div class = "footer">

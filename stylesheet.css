@@ -89,51 +89,53 @@ body{
 	color: #bdc3c7;
 }
 
-.hero-content div{
-	width: 250px;
-	border: 2px solid #2c3e50;
+/*Submit button*/
+.submit-button{
+	border: 3px solid #011345;
 	background-color: #ffffff;
-	opacity: 0.4;
-	filter: alpha(opacity=60);
-	width: 200px;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
 	height: 50px;
-	text-align: center;
-	margin-top: 225px;
+	width: 150px;
 	margin-left: 70px;
-	padding-top: 5px;
+	margin-top: 50px;
 	float: left;
+}
+
+
+.submit-button p{
+	text-align: center;
+	margin-top: 15px;
+	font-size: 16px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+
+.active{
+	background-color: #E67E22;
 }
 
 .form-content{
 	float: right;	
-	margin-top: -300px;
+	margin-top: -250px;
 }
 
-/*Submit button*/
-.submit-button{
-	height: 50px;
-	width: 120px;
-	margin-top: 10px;
-	background-color: #FFFFFF;
-	
-}
 
-.submit-button p{
-	text-align: center;
-	font-weight: bold;	
-}
+
 
 /*Form content*/
 
 #form{
-	background-color: #BCB9CD;
+	background-color: #bdc3c7;
+	border: 2px solid #2980b9;
 	border-radius:2px;
 	padding:20px 30px;
 	box-shadow:0 0 15px;
-	font-size:12px;
+	font-size:16px;
 	font-weight:bold;
-	width:350px;
-	margin:20px 20px 0 35px;
+	width:250px;
+	margin:20px 50px 0 35px;
 	float:left;
 	display: none;
 
@@ -154,17 +156,17 @@ input{
 }
 
 input[type=button]{
-	background-color:#123456;
-	border:1px solid white;
+	background-color:#e67e22;
+	border:1px solid #d35400;
 	font-family: 'Fauna One', serif;
 	font-weight:bold;
 	font-size:18px;
-	color:white;
+	color:#2c3e50;
 }
 
 textarea{
 	width:100%;
-	height:80px;
+	height:70px;
 	margin-top:5px;
 	border-radius:3px;
 	padding:5px;
@@ -279,20 +281,85 @@ textarea{
 	padding-top: 25px;
 }
 
+
+
+
+
+/*Gallery carousel*/
 .g-container{
-	padding: 20px 0px 10px 0px;
-	margin-left: 150px;
+	padding: 10px 0px 10px 0px;
+	width: 500px;
+	margin: auto;
+	/*display:none;*/
 }
 
-.g-container .row div{
-	position:relative;
-	display: inline-block;
-	padding: 5px;
-	box-shadow: 0px 1px 8px 1px #7f8c8d;
-	margin-bottom: 15px;
-	margin-right: 15px;
-	
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto 10px auto;
+  border-radius: 4px;
 }
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+p.control_prev, p.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+p.control_prev:hover, p.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+p.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+p.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+
+
+
+
+
+
+
+
 
 /*Footer*/
 .footer {
