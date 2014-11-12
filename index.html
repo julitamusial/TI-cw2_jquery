@@ -7,6 +7,7 @@
 	  
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600,600italic|Crafty+Girls' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="script.js"></script>
 	<link type="text/css"; rel="stylesheet"; href="stylesheet.css">
@@ -17,10 +18,10 @@
      <div class = "menu">
          <div class = "menu-container">
 			<div id = "left"> 
-                <div id = "Home">
-                    <a href = "#"><p>Home</p></a>
+                <div id="Home">
+                    <a href = "index.html"><p>Home</p></a>
                 </div>
-                 <div>
+                 <div id="Link">
                     <a href = "#"><p>Lorem</p></a>
                 </div> 
                 <div>
@@ -49,31 +50,31 @@
             <h1>Example header</h1>
             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,adipisci velit..</p>
         
-        <!--Submit button-->     
+	<!--Submit button-->     
         <div class = "submit-button"><p>Submit now!</p></div>
      
         </div>
         
+        
+ <!--Form-->
         <div class = "form-content">
-        <!--Form-->
-			<form id="form">
-				<h3>Formularz zgłoszeniowy</h3>
-				<p id="returnmessage"></p>
-				
-				<label>Imię: <span>*</span></label>
-				<input type="text" id="fname" placeholder = "Podaj swoje imię"/>
+        	<form id="form">
+				<h3>SIGN-IN</h3>
+								
+				<label>First name: <span>*</span></label>
+				<input type="text" placeholder = "Enter your first name"/>
 	
-				<label>Nazwisko: <span>*</span></label>
-				<input type="text" id="lname" placeholder = "Podaj swoje nazwisko"/>
+				<label>Last name: <span>*</span></label>
+				<input type="text" placeholder="Enter your last name"/>
 	
 				<label>E-mail: <span>*</span></label>
-				<input type="email" id="email" placeholder = "E-mail też się przyda"/>
+				<input type="email" placeholder="E-mail would be great"/>
 	
-				<label>Wiadomość:</label>
-				<textarea type="text"  id="message" placeholder = "Co Ci chodzi po głowie?"></textarea>
+				<label>Message:</label>
+				<textarea type="text" placeholder="Write whatever you want!"></textarea>
 	
-				<input type="button" id="submit" value = "Wyślij zgłoszenie!"/>
-		</form>
+				<input type="button" id="submit" value = "SEND!"/>
+			</form>
 
         </div>
         
@@ -95,8 +96,8 @@
             <div class = "row">
 				<div class="text">
                     <h3>Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis risus id sem vehicula hendrerit et id sapien. Mauris nulla massa, rutrum eu dictum no</p>
-					<div id = "read-more"><a href = "#"><p>Read more</p></a></div>				
+                    <p>Phasellus auctor ipsum sit amet congue sodales. Phasellus sagittis metus a nunc porta, vel rutrum elit fermentum. Sed mattis, lectus et semper blandit.</p>
+					<div class = "read-more"><a href = "#"><p>Read more</p></a></div>				
 				</div>
 				
                 <div class = "image">
@@ -107,8 +108,8 @@
 			<div class = "row">
                 <div class="text">
                     <h3>Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis risus id sem vehicula hendrerit et id sapien. Mauris nulla massa, rutrum eu dictum no</p>
-					<div id = "read-more"><a href = "#"><p>Read more</p></a></div>
+                    <p>Sed fermentum, ipsum eu mollis interdum, lacus ante gravida massa, quis mollis enim nibh at ex. Quisque tristique risus turpis, in auctor lacus porttitor rhoncus.</p>
+					<div class = "read-more"><a href = "#"><p>Read more</p></a></div>
 				</div>
     
 				<div class = "image">
@@ -119,8 +120,8 @@
 			<div class = "row">	
                 <div class="text">
                     <h3>Dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis risus id sem vehicula hendrerit et id sapien. Mauris nulla massa, rutrum eu dictum no</p>
-					<div id = "read-more"><a href = "#"><p>Read more</p></a></div>
+                    <p>Fusce venenatis nulla ac ligula egestas lobortis. Proin vel sapien sapien. Duis porttitor efficitur est laoreet lobortis. Suspendisse sagittis consectetur est.</p>
+					<div class = "read-more"><a href = "#"><p>Read more</p></a></div>
 				</div>
 				
 				<div class = "image">
@@ -134,23 +135,23 @@
       
  <!--Break line-->
 	<div class = "break">
-		<h2>Lorem ipsum dolor sit amet</h2>
+		<h2>Click to see the gallery...</h2>
 	</div>
 	
 	
 <!--Gallery carousel-->
 
 	<div class = "page">
-		<div class = "g-container">
+		<div class = "g-container" id="gallery">
 			<div id="slider">
-  				<p class="control_next">>></p>
-  				<p class="control_prev"><</p>
+  				<p class="arrow_next">>></p>
+  				<p class="arrow_prev"><</p>
   				<ul>
-    				<li><img src = "img/bridge2.jpg"/></li>
-    				<li><img src = "img/forth-bridge.jpg"/></li>
-    				<li><img src = "img/bridge2.jpg"/></li>
-    				<li><img src = "img/forth-bridge.jpg"/></li>
-    				
+    				<li><img src = "img/bridge2.jpg" style= "width:500px; height:300px"/></li>
+    				<li><img src = "img/forth-bridge.jpg" style= "width:500px; height:300px"/></li>
+    				<li><img src = "img/San-Francisco-noche.jpg" style= "width:500px; height:300px"/></li>
+    				<li><img src = "img/khaju-bridge.jpg" style= "width:500px; height:300px"/></li>
+    				<li><img src = "img/tower-bridge.jpg" style= "width:500px; height:300px"/></li>
   				</ul>  
 			</div>
 		</div>
@@ -176,5 +177,8 @@
         </div>              
     </div>
 
+	<script src="jquery-1.11.1.js"></script>
+	<script src="skrypt.js"></script>
+	
     </body>
 </html>
